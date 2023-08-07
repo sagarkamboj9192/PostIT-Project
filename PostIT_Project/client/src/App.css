@@ -1,8 +1,8 @@
 .App {
   width: 100vw;
   height: auto;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   /* padding-top: 40px; */
   flex-direction: column;
 }
@@ -12,9 +12,23 @@ body {
   padding: 0;
 }
 
+
+#photo {
+  margin: 0px 0px;
+}
+/* .App::before {
+  content: "";
+  background: url('./back_image.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; */
+/* } */
+
 .post {
-  width: 400px;
-  height: 300px;
+  margin: 79px 157px;
+  width: 626px;
+  height: 290px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -32,7 +46,7 @@ body {
 .post .title {
   flex: 20%;
   border-bottom: 1px solid lightgray;
-  background-color: dodgerblue;
+  background-color: #7e7f81;
   display: grid;
   place-content: center;
   color: white;
@@ -50,11 +64,22 @@ body {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  background-color: dodgerblue;
+  background-color: #7e7f81;
   color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.post .footer .username {
+  flex: 50%;
+}
+.post .footer button {
+  width: 83px;
+  margin-left: 314px;
+  cursor: pointer;
+  align-items: center;
+}
+
 
 /* CREATE POST PAGE CSS */
 
@@ -73,8 +98,17 @@ body {
   width: 500px;
   height: auto;
   padding: 20px;
-  border: 5px solid dodgerblue;
+  border: 5px solid #626365;
   border-radius: 5px;
+   margin: 80px 420px;
+}
+
+.createPostPage label {
+  font-size: 1.2 rem;
+}
+
+.formContainer label {
+  font-size: 1.2rem;
 }
 
 .formContainer #inputCreatePost {
@@ -91,14 +125,14 @@ body {
   margin-top: 15px;
   height: 40px;
   border: none;
-  background-color: lightskyblue;
+  background-color: #626365;
   border-radius: 5px;
   color: white;
 }
 
 .formContainer button:hover {
   cursor: pointer;
-  background-color: dodgerblue;
+  background-color: rgb(66, 67, 67);
 }
 
 span {
@@ -109,16 +143,59 @@ span {
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: dodgerblue;
+  background-color: #626365;
   display: flex;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.navbar .loggedInContainer button:hover {
+  background-color: #f2f3f5;
+}
 .navbar a {
   margin-left: 20px;
   text-decoration: none;
+  font-size: 1.2rem;
   color: white;
+}
+.navbar a:hover {
+  color: rgb(226, 221, 221);
+}
+
+.navbar img {
+  height: 66px;
+  width: 72px;
+  margin: 1px 14px;
+  border-radius: 45px;
+}
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 50px;
+  background-color: white;
+}
+
+.navbar h1 {
+  font-size: 25px;
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
 }
 
 /* Individual Post page */
@@ -162,19 +239,19 @@ button {
 }
 
 .addCommentContainer button {
-  background-color: dodgerblue;
+  background-color: #626365;
   color: white;
 }
  
 .addCommentContainer button:hover
 {
   cursor: pointer;
-  background-color: rgb(80, 125, 177);
+  background-color: #848587;
 }
 
 
 .addCommentContainer input {
-  border: 2px solid dodgerblue;
+  border: 2px solid #626365;
 }
 
 .rightSide .listOfComments {
@@ -192,6 +269,9 @@ button {
   border: 1px solid lightgray;
   border-radius: 5px;
   margin-top: 20px;
+}
+.listOfComments .comment label{
+  color: rgb(224, 112, 112);
 }
 
 #individual {
@@ -217,6 +297,7 @@ button {
   width: 100%;
   height: 100vh;
   padding-top: 100px;
+  font-size: 1.1rem;
 }
 
 .loginContainer input,
@@ -229,15 +310,17 @@ button {
 }
 
 .loginContainer button {
-  background-color: dodgerblue;
+  background-color: #626365;
   color: white;
+  font-size: 1.1rem;
 }
 .loginContainer button:hover {
   cursor: pointer;
-  background-color: rgb(80, 125, 177);
+  background-color: rgb(72, 74, 75);
 }
 
 
 .loginContainer input {
-  border: 2px solid dodgerblue;
+  font-size: 1rem;
+  border: 2px solid #626365;
 }

@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState , useContext} from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-
+import { authcontext } from '../ContextApiloginpage/authcontext';
 function LoginPage() {
+
+    const {setauthstate}= useContext(authcontext);
 
     let navigate = useNavigate();
     const [username, setusername] = useState("");
@@ -15,11 +17,12 @@ function LoginPage() {
                 alert(response.data.error);
             }
             else{
-                localStorage.setItem("gettoken",response.data);
+                localStorage.setItem("gettoken",response.data.token);
+                setauthstate({username:response.data.username, id:response.data.id, status:true});
                 navigate("/");
             }
-        })
-    }
+        });
+    };
     return (
         <div className="loginContainer">
             <label>Username:</label>

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function Registrationpage() {
 
-    let navigate= useNavigate();
+    let navigate = useNavigate();
     const initialValues = {
         username: "",
         password:"",
@@ -20,8 +20,9 @@ function Registrationpage() {
     const onSubmit=(data)=>{
         axios.post("http://localhost:3002/auth", data).then(()=>{
             console.log(data);
+            navigate("/");
         })
-    }
+    } 
   return (
     <div>
       <Formik
