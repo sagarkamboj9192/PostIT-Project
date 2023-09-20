@@ -1,0 +1,436 @@
+.App {
+  width: 100vw;
+  height: auto;
+  /* display: flex;
+  align-items: center; */
+  /* padding-top: 40px; */
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* .blockdivide{ 
+
+  display: flex;
+  flex-direction: row;
+}  */
+.backgroundImage {
+  flex: 1;
+  background-image: url('./LoginpageCSS/img.jpg');
+  background-size: cover;
+  overflow: auto;
+}
+
+
+#photo {
+  padding: 79px 0px;
+  margin: 0px 0px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#photo .footer button{
+  width: 83px;
+  font-size: 0.94rem;
+  border-radius: 20px;
+  /* margin-left: 314px; */
+  cursor: pointer;
+  align-items: center;
+}
+.footer .username {
+  flex: 50%;
+}
+.footer .buttons {
+  flex: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#photo .footer .buttons .likeBttn {
+  color: rgba(250, 250, 250, 0.8);
+  height: 33px;
+  width: 42px;
+}
+#photo .footer .buttons .unlikeBttn {
+  color: white;
+  height: 33px;
+  width: 42px;
+}
+
+#photo .footer .buttons label {
+  font-size: 1.4rem;
+}
+
+/* .footer .buttons label {
+  font-size: 1.2rem;
+  height: 17px;
+} */
+/* .post .footer  button {
+  width: 83px;
+  margin-left: 314px;
+  cursor: pointer;
+  align-items: center;
+} */
+
+
+
+/* .App::before {
+  content: "";
+  background: url('./back_image.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; */
+/* } */
+
+.post {
+  margin: 79px 157px;
+  width: 515px;
+  height: 290px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+.post .title {
+  flex: 20%;
+  border-bottom: 1px solid lightgray;
+  background-color: #43787e;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+  background-color: #f2fff2;
+  cursor: pointer;
+}
+
+.post .footer {
+  flex: 20%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: #43787e;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.leftSide .post .footer  button {
+  width: 117px;
+  margin-left: 314px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+
+/* CREATE POST PAGE CSS */
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createPostPage::before{
+    content: "";
+    background: url('./LoginpageCSS/back_image.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    z-index: -1;
+}
+
+
+.registerpage{
+
+  padding: 200px 460px;
+  /* position: relative; */
+  /* background-image: url('./LoginpageCSS/back_image.jpg');
+  background-size: cover;
+  background-position: center; */
+  /* padding: 20px;  Add some padding to give space around the content */
+}
+
+.registration::before{
+  content: "";
+  background: url('./LoginpageCSS/back_image.png') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  /* border: 5px solid #8ae376; */
+  border-radius: 5px;
+  background-color: #f4fbf5;
+}
+
+.createPostPage label {
+  font-size: 1.2 rem;
+}
+
+.formContainer label {
+  font-size: 1.2rem;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: #328b7f;
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: #4aad99;
+}
+
+span {
+  color: red;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: #43787e;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+.navbar .loggedInContainer button:hover {
+  background-color: #f2f3f5;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
+.navbar a:hover {
+  color: rgb(226, 221, 221);
+}
+
+.navbar img {
+  height: 66px;
+  width: 72px;
+  margin: 1px 14px;
+  border-radius: 45px;
+}
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 50px;
+  background-color: white;
+}
+
+.navbar h1 {
+  font-size: 25px;
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+/* Individual Post page */
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.postPage::before{
+  content: "";
+    background: url('./LoginpageCSS/back_image2.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  padding: 76px 0px;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 76px 0px;
+}
+
+.rightSide .addCommentContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.addCommentContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addCommentContainer button {
+  background-color: #3eab26;
+  color: white;
+}
+ 
+.addCommentContainer button:hover
+{
+  cursor: pointer;
+  background-color: #67bb6f;
+}
+
+
+.addCommentContainer input {
+  border: 2px solid #626365;
+  padding-left: 12px;
+}
+
+.rightSide .listOfComments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfComments .comment {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color:white;
+}
+.listOfComments .comment label{
+  color: rgb(224, 112, 112);
+}
+
+#individual {
+  height: 500px;
+  width: 600px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/* LOGIN */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  font-size: 1.1rem;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background-color: #626365;
+  color: white;
+  font-size: 1.1rem;
+  width: 122px;
+}
+.loginContainer button:hover {
+  cursor: pointer;
+  background-color: rgb(72, 74, 75);
+}
+
+
+.loginContainer input {
+  font-size: 1rem;
+  border: 2px solid #626365;
+}
