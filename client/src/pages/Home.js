@@ -105,9 +105,7 @@ function Home() {
             })}
           </div>
         </div>
-        <div className="rightcontainterHomepage">
-          <h1>vasu ye block h</h1>
-        </div>
+        
       </div>
     </>
   );
