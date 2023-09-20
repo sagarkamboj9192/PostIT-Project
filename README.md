@@ -1,6 +1,6 @@
 # PostIT-Project
-Technologies are used in this project are Node.js, React.js, Express.js & MySql. 
-Basically two components are there in this 2 project- Frontend & Backend. For Frontend React.js are used and for Backend Node.js, React.js and Express.js.
+Technologies used in this project are Node.js, React.js, Express.js & MySql. 
+Basically two components are there in this project- Frontend & Backend. For Frontend React.js & for Backend Node.js, React.js and Express.js.
 
 # Getting Started
 1) Create two Folders
