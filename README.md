@@ -1,3 +1,4 @@
+
 # PostIT-Project
 Technologies used in this project are Node.js, React.js, Express.js & MySql. 
 Basically two components are there in this project- Frontend & Backend. For Frontend React.js & for Backend Node.js, React.js and Express.js.
@@ -27,10 +28,13 @@ Basically two components are there in this project- Frontend & Backend. For Fron
         For Clint side - change directory to client like cd client.
         For Server side - change directory to server like cd server.
 
-  and start both client and server using-
+  and run both client and server using- npm start
 
+#Overview
+![login](https://github.com/sagarkamboj9192/PostIT-Project/assets/112564450/fec8358e-9de8-4d45-b631-dc005477a6d3.png)
+![home](https://github.com/sagarkamboj9192/PostIT-Project/assets/112564450/9e39a1e8-5f57-4e7c-91a9-cba3c76d2e00.png)
   
-npm start
+
   
   
    
