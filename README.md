@@ -1,6 +1,11 @@
 # PostIT-Project
-Technologies used in this project are Node.js, React.js, Express.js & MySql. 
-Basically two components are there in this project- Frontend & Backend. For Frontend React.js & for Backend Node.js, React.js and Express.js.
+This is basically a Blogging Application in which user can share his/her experience or thoughts on this application which will be seen to all users.
+## About
+    • User can login to Home Page using his Login id and password and can add or delete the Post.
+    • User can also like and comment on other users posts these all changes reflect to the database.
+    • Technologies used in this project are Node.js, React.js, Express.js & MySql. 
+   
+Basically two components are there in this project- Frontend & Backend. For Frontend React.js & for Backend Node.js, React.js and Express.js and for database is MySQL.
 
 # Getting Started
 1) Create two Folders
